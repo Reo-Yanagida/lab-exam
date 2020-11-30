@@ -1,7 +1,9 @@
 package html;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * Htmlの{@code <meta>}で使用するformat-detectionの値を管理するクラス
@@ -12,6 +14,8 @@ import lombok.NoArgsConstructor;
  */
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 public class FormatDetection {
 
     /**
@@ -32,27 +36,4 @@ public class FormatDetection {
      */
     private String email;
 
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
